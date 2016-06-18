@@ -1,28 +1,29 @@
 # BinaryCombinationKataTest
-Date : 18/06/2016 - Author : kanziti@gmail.com
+Date : 18/06/2016
 
 Hello,
-
 Please find here my answer for the KATA test in two steps corresponding to the two questions :
-
 1st step :
-I created a simple Java project named "BinaryCombinationKataTest" to get a count of combinations
-which meet the criteria demanded (don't have two adjacent "1" bits), and as answer to the 1st question :
+I created a simple application java "BinaryCombinationKataTest" 
+to get  a count of combinations which meet the criteria demanded (don't have two adjacent "1" bits),
+and as answer to the 1st question :
 
-Sequence length			Combination matched
-		3 										5
-		4						  				8
-		5									   13
-		6									   21
-		7									   34
-		8									   55
-		9									   89
-		10								  144
-		n								E(n)=E(n-1)+E(n-2) // this relationship will be proved in 2nd step
+Sequence length ----> Combination matched
+3               ---->         5
+4               ---->         8
+5               ---->        13
+6               ---->        21
+7               ---->        34
+8               ---->        55
+9               ---->        89
+10              ---->       144
+n               ---->     E(n)=E(n-1)+E(n-2) 
+
+This relationship is till now due to observation and it will be proved in 2nd step.
 
 2nd step related to the second question:
 
-To prove the existing of the relationship, let study the transition of the number of bits
+To prove the relationship observed above, let study the transition of the number of bits
 from (n) to (n + 1):
 
 Assuming the sets E(n)and E(n+1) contain the binary combinations respectively for  "n" and "n + 1" bits
@@ -40,11 +41,11 @@ Practically to go up from (n) bits to (n+1) bits we can just add 1 bit ("0" , "1
 or at the end of each combination of the subsets E0(n) and E1(n) but we must keep in mind the defined
 criteria, let see the Test table below: 
 
-From 	E(n)	added*	E(n+1)	Criteria matched
-E0(n) 	010		0		0010				yes
-E1(n) 	101		0		0101				yes
-E0(n) 	010		1		1010				yes
-E1(n) 	101		1		1101				No
+From     E(n)	added*	E(n+1)	Criteria matched
+E0(n)     010     0        0010            yes
+E1(n)     101     0        0101            yes
+E0(n)     010     1        1010            yes
+E1(n)     101     1        1101            No
 
 * I add the new bit at the beginning (just a choice)
 
@@ -68,6 +69,4 @@ E(n+1)= E(n)+ E(n-1)
 And finally :
 
 E(n)= E(n-1)+ E(n-2)
-
-
 
