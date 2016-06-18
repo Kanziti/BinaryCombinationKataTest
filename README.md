@@ -1,6 +1,8 @@
 # BinaryCombinationKataTest
 Date : 18/06/2016
 
+Notice : For comfortable reading please use edit mode
+
 Hello,
 
 Please find here my answer for the KATA test in two steps corresponding to the two questions :
