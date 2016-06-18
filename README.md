@@ -2,11 +2,14 @@
 Date : 18/06/2016
 
 Hello,
+
 Please find here my answer for the KATA test in two steps corresponding to the two questions :
+
 1st step :
-I created a simple application java "BinaryCombinationKataTest" 
-to get  a count of combinations which meet the criteria demanded (don't have two adjacent "1" bits),
-and as answer to the 1st question :
+I created this as simple java project named "BinaryCombinationKataTest" to get  a count of combinations
+which meet the criteria demanded (binary numbers that don't have two adjacent "1" bits).
+
+As an answer to the first question :
 
 Sequence length ----> Combination matched
 3               ---->         5
