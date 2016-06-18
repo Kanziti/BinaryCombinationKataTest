@@ -41,7 +41,7 @@ Practically to go up from (n) bits to (n+1) bits we can just add 1 bit ("0" , "1
 or at the end of each combination of the subsets E0(n) and E1(n) but we must keep in mind the defined
 criteria, let see the Test table below: 
 
-From     E(n)	added*	E(n+1)	Criteria matched
+From     E(n)	  added*	  E(n+1)	Criteria matched
 E0(n)     010     0        0010            yes
 E1(n)     101     0        0101            yes
 E0(n)     010     1        1010            yes
